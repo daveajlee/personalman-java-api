@@ -7,6 +7,22 @@
 
 	<name>PersonalMan - Java API</name>
 	<version>1.2.1-SNAPSHOT</version>
+	<description>This module provides a Java Implementation for the PersonalMan REST API.</description>
+	<url>https://www.davelee.de</url>
+	<developers>
+		<developer>
+			<id>1</id>
+			<name>David A J Lee</name>
+			<url>https://www.davelee.de</url>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>GNU General Public Licence</name>
+			<url>https://www.gnu.org/licenses/gpl-3.0.en.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
