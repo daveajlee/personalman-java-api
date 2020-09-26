@@ -12,7 +12,7 @@ import lombok.Setter;
 @Builder
 @Getter
 @Setter
-public class RegisterRequest {
+public class RegisterUserRequest {
 
     //first name of the person making registration request
     private String firstName;
