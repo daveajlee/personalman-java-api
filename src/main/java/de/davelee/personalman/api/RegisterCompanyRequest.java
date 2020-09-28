@@ -1,14 +1,14 @@
 package de.davelee.personalman.api;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * This class is part of the PersonalMan REST API. It represents a request for registration of a new company in PersonalMan.
  * @author Dave Lee
  */
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class RegisterCompanyRequest {
