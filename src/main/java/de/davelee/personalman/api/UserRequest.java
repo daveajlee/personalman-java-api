@@ -28,6 +28,9 @@ public class UserRequest {
     // username
     private String username;
 
+    //password
+    private String password;
+
     // company associated with
     private String company;
 
