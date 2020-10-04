@@ -22,6 +22,12 @@ public class RegisterUserRequest {
     //company which the person works for
     private String company;
 
+    //position in the company which the person has
+    private String position;
+
+    // which days of the week that the users works comma-separated (e.g. Monday,Tuesday,Wednesday,Thursday)
+    private String workingDays;
+
     //The username which the user wants to use
     private String username;
 
