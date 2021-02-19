@@ -1,8 +1,6 @@
 package de.davelee.personalman.api;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * This class is part of the PersonalMan REST API. It represents a request for a login with username and password.
@@ -10,9 +8,14 @@ import lombok.Setter;
  * @author Dave Lee
  */
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class LoginRequest {
+
+    //The company that the user is using to login.
+    private String company;
 
     //The username who wants to login
     private String username;
