@@ -1,8 +1,6 @@
 package de.davelee.personalman.api;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * This class is part of the PersonalMan REST API. It represents the response to a login request with either a token
@@ -10,6 +8,8 @@ import lombok.Setter;
  * @author Dave Lee
  */
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class LoginResponse {
