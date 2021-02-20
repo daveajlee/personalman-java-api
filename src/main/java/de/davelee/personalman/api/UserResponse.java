@@ -45,4 +45,7 @@ public class UserResponse {
     // start date for the user in format dd-MM-yyyy
     private String startDate;
 
+    //The role that this user has
+    private String role;
+
 }

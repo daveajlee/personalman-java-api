@@ -16,7 +16,7 @@ public class UsersResponseTest {
      */
     public void testGettersAndSetters() {
         UserResponse[] userResponses = new UserResponse[1];
-        userResponses[0] =  new UserResponse("David", "Lee", "david.lee", "MyCompany", 25, "Monday,Tuesday", "Tester", "08-02-2017");
+        userResponses[0] =  new UserResponse("David", "Lee", "david.lee", "MyCompany", 25, "Monday,Tuesday", "Tester", "08-02-2017", "Admin");
         UsersResponse usersResponse = UsersResponse.builder()
                 .count(1L)
                 .userResponses(userResponses).build();

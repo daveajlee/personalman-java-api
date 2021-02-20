@@ -46,4 +46,7 @@ public class UserRequest {
     // start date for the user in format dd-MM-yyyy
     private String startDate;
 
+    //The role which the user would like
+    private String role;
+
 }

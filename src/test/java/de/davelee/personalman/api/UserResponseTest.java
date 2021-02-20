@@ -15,7 +15,7 @@ public class UserResponseTest {
      * Test the constructor and ensure variables are set together using the getter methods.
      */
     public void testConstructor() {
-        UserResponse userResponse = new UserResponse("David", "Lee", "david.lee", "MyCompany", 25, "Monday,Tuesday", "Tester", "08-02-2017");
+        UserResponse userResponse = new UserResponse("David", "Lee", "david.lee", "MyCompany", 25, "Monday,Tuesday", "Tester", "08-02-2017", "Admin");
         assertEquals("david.lee", userResponse.getUsername());
         assertEquals("MyCompany", userResponse.getCompany());
         assertEquals("08-02-2017", userResponse.getStartDate());
@@ -24,6 +24,7 @@ public class UserResponseTest {
         assertEquals(25, userResponse.getLeaveEntitlementPerYear());
         assertEquals("Tester", userResponse.getPosition());
         assertEquals("Monday,Tuesday", userResponse.getWorkingDays());
+        assertEquals("Admin", userResponse.getRole());
     }
 
     @Test
@@ -48,6 +49,8 @@ public class UserResponseTest {
         assertEquals("Tester", userResponse.getPosition());
         userResponse.setWorkingDays("Monday,Tuesday");
         assertEquals("Monday,Tuesday", userResponse.getWorkingDays());
+        userResponse.setRole("Employee");
+        assertEquals("Employee", userResponse.getRole());
     }
 
 }
