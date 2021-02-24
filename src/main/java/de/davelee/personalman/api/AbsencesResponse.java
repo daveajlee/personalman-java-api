@@ -1,8 +1,6 @@
 package de.davelee.personalman.api;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +14,8 @@ import java.util.Map;
  * @author Dave Lee
  */
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class AbsencesResponse {
