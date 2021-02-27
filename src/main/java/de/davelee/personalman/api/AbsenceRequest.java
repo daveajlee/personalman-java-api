@@ -34,4 +34,7 @@ public class AbsenceRequest {
     // The category of the absence
     private String category;
 
+    // The token of the user to verify that they are logged in
+    private String token;
+
 }

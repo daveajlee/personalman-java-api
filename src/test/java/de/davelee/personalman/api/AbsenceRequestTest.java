@@ -14,12 +14,13 @@ public class AbsenceRequestTest {
      * Test the constructor and ensure variables are set together using the getter methods.
      */
     public void testConstructor() {
-        AbsenceRequest absenceRequest = new AbsenceRequest("MyCompany", "dlee", "07-02-2017", "08-02-2017", "Holiday");
+        AbsenceRequest absenceRequest = new AbsenceRequest("MyCompany", "dlee", "07-02-2017", "08-02-2017", "Holiday", "dlee-ejekrj");
         assertEquals("MyCompany", absenceRequest.getCompany());
         assertEquals("dlee", absenceRequest.getUsername());
         assertEquals("07-02-2017", absenceRequest.getStartDate());
         assertEquals("08-02-2017", absenceRequest.getEndDate());
         assertEquals("Holiday", absenceRequest.getCategory());
+        assertEquals("dlee-ejekrj", absenceRequest.getToken());
     }
 
     @Test
@@ -38,6 +39,8 @@ public class AbsenceRequestTest {
         assertEquals("07-02-2017", absenceRequest.getEndDate());
         absenceRequest.setCategory("Illness");
         assertEquals("Illness", absenceRequest.getCategory());
+        absenceRequest.setToken("dlee-ejekrk");
+        assertEquals("dlee-ejekrk", absenceRequest.getToken());
     }
 
 }

@@ -25,4 +25,7 @@ public class ChangePasswordRequest {
     // company associated with
     private String company;
 
+    // The token of the user to verify that they are logged in
+    private String token;
+
 }
