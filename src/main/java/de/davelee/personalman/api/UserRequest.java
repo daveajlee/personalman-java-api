@@ -1,10 +1,6 @@
 package de.davelee.personalman.api;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * This class is part of the PersonalMan REST API. It represents a request to add the following user to the server
@@ -17,6 +13,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class UserRequest {
 
     // first name of the user

@@ -30,14 +30,15 @@ public class AbsencesResponse {
     private Map<String, Integer> statisticsMap = new HashMap<>();
 
     /**
-     * Increment the count for the specified category in the hash map by 1.
+     * Increment the count for the specified category in the hash map by the amount of days that the absence took place.
      * @param absenceCategory a <code>String</code> containing the category to increment.
+     * @param amountOfDays a <code>int</code> containing the number of days that the absence occurs for.
      */
-    public void addToStatisticsMap (final String absenceCategory ) {
+    public void addToStatisticsMap (final String absenceCategory, final int amountOfDays ) {
         if ( statisticsMap.containsKey(absenceCategory) ) {
-            statisticsMap.put(absenceCategory, statisticsMap.get(absenceCategory) + 1);
+            statisticsMap.put(absenceCategory, statisticsMap.get(absenceCategory) + amountOfDays);
         } else {
-            statisticsMap.put(absenceCategory, 1);
+            statisticsMap.put(absenceCategory, amountOfDays);
         }
     }
 

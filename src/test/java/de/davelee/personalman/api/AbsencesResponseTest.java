@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class AbsencesResponseTest {
 
-    @Test
     /**
      * Test the setter methods and ensure variables are set together using the getter methods.
      */
+    @Test
     public void testSettersAndGetters() {
         AbsencesResponse absencesResponse = AbsencesResponse.builder()
                 .count(1L).build();
@@ -34,20 +34,20 @@ public class AbsencesResponseTest {
         assertEquals(1, absencesResponse.getStatisticsMap().get("Holiday"));
     }
 
-    @Test
     /**
      * Test the addToStatisticsMap method by adding to an already existing category or adding to a new category.
      */
+    @Test
     public void testAddStatisticsMap() {
         //This is necessary as Maps.of will produce an immutable map which we cannot add to in next test.
         Map<String, Integer> statisticsMap = new HashMap<>();
         statisticsMap.put("Holiday", 1);
         AbsencesResponse absencesResponse = AbsencesResponse.builder()
                 .statisticsMap(statisticsMap).build();
-        absencesResponse.addToStatisticsMap("Illness");
-        assertEquals(1, absencesResponse.getStatisticsMap().get("Illness"));
-        absencesResponse.addToStatisticsMap("Holiday");
-        assertEquals(2, absencesResponse.getStatisticsMap().get("Holiday"));
+        absencesResponse.addToStatisticsMap("Illness", 3);
+        assertEquals(3, absencesResponse.getStatisticsMap().get("Illness"));
+        absencesResponse.addToStatisticsMap("Holiday", 4);
+        assertEquals(5, absencesResponse.getStatisticsMap().get("Holiday"));
     }
 
 }
